@@ -1,0 +1,32 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-module-resolver",
+      // "@babel/plugin-transform-runtime",
+      // {
+      //   "regenerator": true
+      // },
+      {
+        "alias": {
+          // "@assets/images": "./src/assets/images",
+          "@assets/svg": "./src/assets/svg",
+          "@common/types": "./src/common/types",
+          "@common/localization": "./src/common/localization",
+          "@components": "./src/components",
+          "@common": "./src/common",
+          "@store": "./src/store"
+        }
+      }
+    ]
+  ]
+}
