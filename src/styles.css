@@ -1,10 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Source+Sans+Pro:ital,wght@0,300;1,200&display=swap');
+
 .app {
     flex-direction: column;
     display: flex;
 }
 
+/* @font-face {
+    font-family: "minecraft";
+    src: url("fonts/SourceSansPro-ExtraLight.ttf")
+} */
+
 body {
     margin: 0px !important;
+    padding: 0px !important;
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: "SegoeWP", sans-serif;
+    /* font-family: "Source Sans Pro", ; */
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+@media screen and (min-width: 1180px) {
+    .layout {
+        width: 100%;
+    }
+
+    .layout>:first-child {
+        margin-right: 11.36vw;
+        margin-left: 11.36vw;
+        width: calc(100vw - 22.72vw);
+    }
+}
+
+/* @media screen and (min-width: 1180px) { */
+    /* .layout {
+        width: 100%;
+    }
+
+    .layout>:first-child {
+        margin-right: 3vw;
+        margin-left: 3vw;
+        width: calc(100vw - 6vw);
+    } */
+/* } */

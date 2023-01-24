@@ -1,7 +1,5 @@
 export interface IIConProps {
-  iconClassName?: string
-  iconName: string
-  size: IconSize
+  iconClassName?: string;
+  iconName: string;
 }
 
-export type IconSize = '16' | '32' | 'any'

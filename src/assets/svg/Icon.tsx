@@ -5,7 +5,7 @@ export default function Icon(props: IIConProps) {
   return (
     <img
       className={props.iconClassName}
-      src={require(`./${props.size}/${props.iconName}.svg`)}
+      src={require(`./default/${props.iconName}.svg`)}
     />
   )
 }

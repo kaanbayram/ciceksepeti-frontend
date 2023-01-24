@@ -1,0 +1,44 @@
+.categoriesContainer {
+    padding-top: 10px;
+
+    .lastestBreadCrumbItem {
+        color: #7cb305;
+    }
+
+    .categoriesHeader {
+        margin-top: 10px;
+
+        &>span {
+            text-align: left;
+            font: normal normal normal 24px/13px Source Sans Pro;
+            letter-spacing: 0px;
+            color: #044DC3;
+            opacity: 1;
+            font-weight: 600;
+            margin-left: 6px;
+        }
+    }
+
+    .categoryList {
+        gap: 19px 20px;
+
+        display: none;
+
+        @media screen and (min-width: 1180px) {
+            columns: 7;
+            display: flex;
+        }
+
+        flex-wrap: wrap;
+        margin-top: 10px;
+
+        .categoryItem {
+            width: 190px;
+            height: 50px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #E2E7E9;
+            border-radius: 10px;
+            opacity: 1;
+        }
+    }
+}

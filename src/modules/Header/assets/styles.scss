@@ -1,0 +1,37 @@
+.subHeader {
+    display: flex;
+    align-items: center;
+    height: 74px;
+    position: relative;
+    width: 100%;
+
+    &>div {
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &>h1 {
+            text-align: left;
+            font-family: 'Source Sans Pro', sans-serif;
+
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+
+        }
+    }
+
+    &>img {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        min-height: 44px;
+    }
+}
+
+.header {
+    height: 90px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}

@@ -1,0 +1,141 @@
+.product {
+
+    padding: 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E7E9;
+    border-radius: 10px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+
+    &>div {
+        margin-top: 10px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: grey;
+        border-radius: 30px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>span {
+            margin-right: auto;
+            margin-left: auto;
+            font: normal normal bold 18px/23px Source Sans Pro;
+            font-weight: 600;
+        }
+
+        &>:nth-child(1) {
+            margin-right: auto;
+        }
+
+        &>:nth-child(3) {
+            margin-left: auto;
+        }
+
+        &>button {
+            border-radius: 100%;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #E8F1FF;
+
+            &>span {
+                font-size: 30px;
+                text-align: center;
+                color: #003eb3;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 3px;
+                width: 3px;
+            }
+        }
+    }
+
+    &>button {
+        border-radius: 30px;
+        border-width: 1px;
+        margin-top: 10px;
+        color: #0958d9;
+
+        &>span {
+            font-weight: 600;
+        }
+    }
+
+    &>img {
+        width: 100%;
+        background: transparent 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 1;
+    }
+
+    .productName {
+        text-align: left;
+        font: normal normal 600 15px/17px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #555555;
+        opacity: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 5px;
+    }
+
+    .productShipment {
+        text-align: left;
+        font: normal normal 600 15px/13px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #51B549;
+        opacity: 1;
+        margin-top: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .productPrice {
+        text-align: left;
+        font: normal normal 600 16px/13px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        margin-top: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    // @media screen and (min-width: 0px) {
+    //     width: 90.17vw;
+    //     height: 150.83vw;
+    // }
+
+    // @media screen and (min-width: 395px) {
+    //     width: 40.17vw;
+    //     height: 58.83vw;
+    // }
+
+    // @media screen and (min-width: 680px) {
+    //     width: 30.17vw;
+    //     height: 45.83vw;
+    // }
+
+    // // @media screen and (min-width: 850px) {
+    // //     width: 15.17vw;
+    // //     height: 22.83vw;
+    // // }
+
+    // @media screen and (min-width: 1180px) {
+    //     width: 13.17vw;
+    //     height: 20.83vw;
+    // }
+
+
+
+    border-style: solid;
+    border-width: 1px;
+}

@@ -1,3 +1,9 @@
 {
-  "test": "test"
+  "test": "test",
+  "searchProduct": "Ürün Ara",
+  "search": "Ara",
+  "basket": "Sepetim",
+  "basketPromotionMessage": "ürün daha ekleyin kargo bedava",
+  "categories": "Kategoriler",
+  "addToBasket":"Sepete Ekle"
 }

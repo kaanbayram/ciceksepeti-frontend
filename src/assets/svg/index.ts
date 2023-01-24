@@ -1,2 +1,2 @@
 export { default as Icon } from './Icon'
-export type { IIConProps, IconSize } from './IIconProps'
+export type { IIConProps } from './IIconProps'

@@ -1,0 +1,87 @@
+.basketButton {
+    width: 142px;
+    height: 50px;
+    background: #044DC3 0% 0% no-repeat padding-box;
+    border-radius: 28px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &>span {
+        margin-left: 3.6px;
+        text-align: left;
+        font: normal normal 600 16px/20px Source Sans Pro;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+}
+
+.popoverOverlay {
+    :global {
+        .ant-popover-content {
+            .ant-popover-inner {
+                background: #F54257 0% 0% no-repeat padding-box;
+                opacity: 1;
+                padding: 20px 20px 14px 20px;
+            }
+
+            .ant-popover-arrow {
+                --antd-arrow-background-color: #F54257
+            }
+        }
+    }
+}
+
+.shipmentContainer {
+    background: #F54257 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+    .shipmentHeaderStyles {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        width: 100%;
+
+        .leftingShipmentPrice {
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: left;
+            font: normal normal 600 15px/11px Source Sans Pro;
+            letter-spacing: 0px;
+            color: #FFCE00;
+        }
+
+        .leftingShipmentText {
+            text-align: left;
+            font: normal normal 600 15px/11px Source Sans Pro;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+        }
+    }
+
+    .loadBarContainer {
+        margin-top: 11px;
+
+        .loadBar {
+            width: 15.26vw;
+            height: 5px;
+            background: #D01D32 0% 0% no-repeat padding-box;
+            border-radius: 22px;
+            opacity: 1;
+
+            .loadBarFullfilled {
+                background: #FFCE00 0% 0% no-repeat padding-box;
+                border-radius: 22px;
+                opacity: 1;
+                height: 5px;
+                // transition-duration: 1s;
+                // transition-timing-function: ease;
+                // transition-property: width;
+                transition: all 2s;
+            }
+        }
+    }
+}
