@@ -41,6 +41,7 @@ export default function Product(props: IProductProps) {
             <img src={`./images/product.png`} />
             <span className={Styles.productName}>{`${props.name}`}</span>
             <span className={Styles.productShipment}>{Localization.localize('freeDelivery')}</span>
+            <span className={Styles.productPrice}>{`${props.price} TL`}</span>
             {getProductButton()}
         </div>
     )
