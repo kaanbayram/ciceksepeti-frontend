@@ -1,13 +1,19 @@
+@use '../../../master.scss' as m;
+
 .searchStyles {
     height: 50px;
     background: #F7F7F7 0% 0% no-repeat padding-box;
     border: 2px solid #EDF1F2;
     border-radius: 28px;
     opacity: 1;
-    // margin-right: 224px;
-    // margin-left: 79px;
-    margin-right: 11vw;
-    margin-left: 4.11vw;
+    margin-top: 10px;
+
+    @media screen and (min-width: m.$xsmall) {
+        margin-right: 11vw;
+        margin-left: 4.11vw;
+        margin-top: initial;
+    }
+
 
     &:focus {
         box-shadow: none !important;

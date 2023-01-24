@@ -1,3 +1,5 @@
+@use '../../../master.scss' as m;
+
 .discountContainer {
 
     padding-top: 30px;
@@ -18,9 +20,13 @@
         >:nth-child(3) {
             padding: 10px;
             border-radius: 10px;
-            display: flex;
+
             gap: 35px;
             align-items: center;
+
+            @media screen and (min-width: m.$xsmall) {
+                display: flex;
+            }
 
             img {
                 height: 133px;
@@ -70,13 +76,13 @@
             background: #E2F7E1 0% 0% no-repeat padding-box;
         }
 
-        @media screen and (min-width: 680px) {
+        @media screen and (min-width: m.$small) {
             columns: 1;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
         }
 
-        @media screen and (min-width: 1180px) {
+        @media screen and (min-width: m.$large) {
             columns: 3;
             display: grid;
             grid-template-columns: repeat(3, 1fr);

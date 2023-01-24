@@ -1,4 +1,7 @@
+@use '../../../master.scss' as m;
+
 .basketButton {
+    position: relative;
     width: 142px;
     height: 50px;
     background: #044DC3 0% 0% no-repeat padding-box;
@@ -7,6 +10,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+
+    @media screen and (min-width: m.$xsmall) {
+        margin-right: initial;
+        margin-left: initial;
+        margin-top: initial;
+    }
+
 
     &>span {
         margin-left: 3.6px;
@@ -16,18 +29,50 @@
         color: #FFFFFF;
         opacity: 1;
     }
+
+    &>p {
+        position: absolute;
+        background: red;
+        color: white;
+        border-radius: 50%;
+        top: -30px;
+        right: 0px;
+        padding: 5px;
+        aspect-ratio: 1 / 1;
+        height: 20px;
+    }
 }
 
 .popoverOverlay {
     :global {
+
+        @media not all and (min-width: m.$xsmall) {
+            left: 2px !important;
+            width: 99vw;
+        }
+
+
         .ant-popover-content {
             .ant-popover-inner {
+
+                @media screen and (min-width: m.$xsmall) {
+                    width: unset;
+                }
+
+                width: 100%;
+
                 background: #F54257 0% 0% no-repeat padding-box;
                 opacity: 1;
                 padding: 20px 20px 14px 20px;
             }
 
             .ant-popover-arrow {
+                @media screen and (min-width: m.$xsmall) {
+                    display: initial;
+                }
+
+                display: none;
+
                 --antd-arrow-background-color: #F54257
             }
         }
@@ -67,7 +112,7 @@
         margin-top: 11px;
 
         .loadBar {
-            width: 15.26vw;
+            width: 100%;
             height: 5px;
             background: #D01D32 0% 0% no-repeat padding-box;
             border-radius: 22px;

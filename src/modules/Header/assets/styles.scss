@@ -1,3 +1,6 @@
+@use '../../../master.scss' as m;
+
+
 .subHeader {
     display: flex;
     align-items: center;
@@ -10,6 +13,7 @@
         height: 100%;
         display: flex;
         align-items: center;
+
         &>h1 {
             text-align: left;
             font-family: 'Source Sans Pro', sans-serif;
@@ -17,6 +21,11 @@
             letter-spacing: 0px;
             color: #FFFFFF;
             opacity: 1;
+            display: none;
+
+            @media screen and (min-width:m.$xsmall) {
+                display: initial;
+            }
 
         }
     }
@@ -30,8 +39,14 @@
 }
 
 .header {
-    height: 90px;
-    align-items: center;
-    display: flex;
-    width: 100%;
+
+    padding: 10px;
+
+    @media screen and (min-width: m.$xsmall) {
+        height: 90px;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        padding: initial;
+    }
 }

@@ -1,3 +1,5 @@
+@use '../../../master.scss' as m;
+
 .categoriesContainer {
     padding-top: 10px;
 
@@ -22,14 +24,26 @@
     .categoryList {
         gap: 19px 20px;
 
-        display: none;
+        columns: 7;
+        display: flex;
 
-        @media screen and (min-width: 1180px) {
-            columns: 7;
-            display: flex;
+
+        @media not all and (min-width: m.$small) {
+            // flex-wrap: wrap;
+            // position: initial;
+            // overflow-x: initial;
+            // width: initial;
+            // padding: initial;
+            position: absolute;
+            overflow-x: auto;
+            width: 100vw;
+            padding: 5px;
         }
 
-        flex-wrap: wrap;
+        @media screen and (min-width: m.$small) {
+            flex-wrap: wrap;
+        }
+
         margin-top: 10px;
 
         .categoryItem {

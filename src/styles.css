@@ -37,15 +37,3 @@ h6 {
         width: calc(100vw - 22.72vw);
     }
 }
-
-/* @media screen and (min-width: 1180px) { */
-    /* .layout {
-        width: 100%;
-    }
-
-    .layout>:first-child {
-        margin-right: 3vw;
-        margin-left: 3vw;
-        width: calc(100vw - 6vw);
-    } */
-/* } */

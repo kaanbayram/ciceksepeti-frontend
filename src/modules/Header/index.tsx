@@ -15,22 +15,17 @@ const Header = (props: any) => {
     const dispatch = useDispatch();
     const basket = useSelector((state: IState) => state.basket);
 
+    const basketItemCount = useMemo(() => {
+        let count = 0;
+        basket.forEach((item) => {
+            if (item.count) count = count + item.count;
+        });
+        return count;
+    }, [basket]);
+
     const basketPrice: number = useMemo(() => {
         return getPrices(basket) as number;
     }, [basket]);
-    /**
-     * Open filter drawer for small or medium screens
-     */
-    function openFilterDrawer() {
-        props.changeFilterDrawerStatus(true);
-    }
-
-    /**
-     * Open basket drawer for small or medium screens
-     */
-    function openBasketDrawer() {
-        props.changeBasketDrawerStatus(true);
-    }
 
     const onChangeSearch = debounce((e: any) => {
         if (!e.target.value.length) {
@@ -45,12 +40,9 @@ const Header = (props: any) => {
     return (
         <div className='layout'>
             <header className={[Styles.header].join(' ')}>
-                <Icon
-                    iconName={"ciceksepeti"}
-                // iconClassName={[Styles.iconStyles, item.iconClassName].join(' ')}
-                />
+                <Icon iconName={"ciceksepeti"} />
                 <Search onChangeSearch={onChangeSearch} />
-                <Basket basketPrice={basketPrice} freeDeliveryLimit={FREE_DELIVERY_LIMIT} />
+                <Basket basketPrice={basketPrice} freeDeliveryLimit={FREE_DELIVERY_LIMIT} basketItemCount={basketItemCount} />
             </header>
             <SubHeader />
         </div>

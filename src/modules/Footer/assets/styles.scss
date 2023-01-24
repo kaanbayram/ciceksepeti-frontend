@@ -1,3 +1,5 @@
+@use '../../../master' as m;
+
 .copyright {
     height: 60px;
     background: #E6E6E6 0% 0% no-repeat padding-box;
@@ -34,17 +36,16 @@
             background: unset;
             flex-wrap: wrap;
 
-            @media screen and (min-width: 680px) {}
 
 
-
-            @media screen and (min-width: 680px) {
+            @media screen and (min-width: m.$small) {
                 background: #FFFFFF 0% 0% no-repeat padding-box;
                 flex-wrap: unset;
                 margin-bottom: 105px;
+                margin-bottom: 200px;
             }
 
-            margin-bottom: 200px;
+            margin-bottom: 300px;
 
 
             &>img {
@@ -55,7 +56,7 @@
 
             &>div {
                 &>:first-child {
-                    @media screen and (min-width: 680px) {
+                    @media screen and (min-width: m.$small) {
 
                         margin-top: unset;
                     }
@@ -89,14 +90,30 @@
                     }
                 }
 
-                .marketIcons {
-                    display: flex;
-                    margin-top: 27px;
-                    margin-left: 31px;
 
-                    &>:nth-child(2) {
-                        margin-left: 11.5px;
+
+                .marketIcons {
+
+                    margin-top: 30px;
+
+                    @media screen and (min-width: m.$xsmall) {
+                        display: flex;
+                        margin-top: 27px;
+                        margin-left: 31px;
+
+                        &>:nth-child(2) {
+                            margin-left: 11.5px;
+                        }
                     }
+
+                    &>:nth-child(1),
+                    :nth-child(2) {
+                        margin-right: auto;
+                        margin-left: auto;
+                        display: flex;
+                    }
+
+
                 }
             }
         }
@@ -106,7 +123,7 @@
             &>div {
 
 
-                @media screen and (min-width: 390px) {
+                @media screen and (min-width: m.$xsmall) {
                     display: flex;
                     align-items: flex-start;
                     justify-content: center;
@@ -163,26 +180,17 @@
                 }
             }
 
-            @media screen and (min-width: 0px) {
-                columns: 1;
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            @media screen and (min-width: 390px) {
-                columns: 2;
+            @media screen and (min-width: m.$xsmall) {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            @media screen and (min-width: 680px) {
-                columns: 3;
+            @media screen and (min-width: m.$small) {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            @media screen and (min-width: 1180px) {
-                columns: 5;
+            @media screen and (min-width: m.$large) {
                 display: grid;
                 grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
             }

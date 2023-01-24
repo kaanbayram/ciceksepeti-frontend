@@ -1,14 +1,11 @@
 import { Icon } from '@assets/svg';
 import { Localization } from '@common';
-import { Button, Popover, Progress } from 'antd';
-import React, { useMemo, useState } from 'react';
+import { Button, Popover } from 'antd';
+import React, { useMemo } from 'react';
 import * as Styles from "./assets/styles.scss";
 import { IBasketProps } from './entities';
 
 export default function Basket(props: IBasketProps) {
-
-    const [leftingPrice, setLeftingPrice] = useState<number>();
-
 
     const getLeftingPriceText = () => {
         const amount = props.freeDeliveryLimit - Number(props.basketPrice);
@@ -65,6 +62,7 @@ export default function Basket(props: IBasketProps) {
             <Button className={Styles.basketButton} >
                 <Icon iconName='basketIcon' />
                 <span>{Localization.localize('basket')}</span>
+                <p>{props.basketItemCount}</p>
             </Button>
         </Popover>
     )

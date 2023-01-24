@@ -28,7 +28,6 @@ export class Basket {
 
         localStorage.setItem('basket', JSON.stringify(basket));
 
-        // return JSON.stringify(basket);
         return basket;
     }
 
@@ -50,8 +49,6 @@ export class Basket {
         }
         else {
             localStorage.setItem('basket', JSON.stringify(basket));
-
-            // return JSON.stringify(basket)
             return basket;
         }
 

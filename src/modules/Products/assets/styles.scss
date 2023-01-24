@@ -1,5 +1,11 @@
+@use '../../../master.scss' as m;
+
 .products {
     margin-top: 30px;
+
+    @media not all and (min-width: m.$small) {
+        margin-top: 100px;
+    }
 
     .producstContainer {
         .productsHeader {
@@ -18,36 +24,20 @@
         .productList {
             gap: 30px 30px;
 
-            @media screen and (min-width: 0px) {
-                columns: 1;
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-            }
-
-            @media screen and (min-width: 390px) {
-                columns: 2;
+            @media screen and (min-width: m.$xsmall) {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            @media screen and (min-width: 680px) {
-                columns: 3;
+            @media screen and (min-width: m.$small) {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            // @media screen and (min-width: 850px) {
-            //     columns: 4;
-            //     display: flex;
-            // }
-
-            @media screen and (min-width: 1180px) {
-                columns: 5;
-                // display: flex;
+            @media screen and (min-width: m.$large) {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
             }
-
 
             flex-wrap: wrap;
             margin-top: 25px;
