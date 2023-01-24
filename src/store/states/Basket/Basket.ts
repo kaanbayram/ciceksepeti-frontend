@@ -11,8 +11,6 @@ export const BasketSlice = createSlice({
     reducers: {
         addProduct: (state, action) =>
             produce(state, (draft) => add(draft, action)),
-        removeProduct: (state, action) =>
-            produce(state, (draft) => remove(draft, action)),
         setBasket: (state, action) => set(state, action),
     },
 })
@@ -24,8 +22,6 @@ const add = (draft: IBasketItem[], action: IAction) => {
     draft.push(action.payload);
 }
 
-const remove = (draft: IBasketItem[], action: IAction) => {
-}
 
 export const basket = BasketSlice.reducer
-export const { addProduct, removeProduct, setBasket } = BasketSlice.actions
+export const { addProduct, setBasket } = BasketSlice.actions

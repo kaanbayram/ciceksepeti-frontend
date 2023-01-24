@@ -18,14 +18,6 @@ export default function CategoryItem(props: ICategoryItemProps) {
         dispatch(changeCategory(props.categoryName));
     }
 
-    const btnClass = useMemo(() => {
-        return cx({
-            categoryItem: true,
-            selected: category === props.categoryName
-        });
-    }, [category])
-
-
     return (
         <Button className={[Styles.categoryItem, category === props.categoryName ? Styles.selectedCategory : ""].join(' ')} onClick={onChangeCategory}>
             {Localization.localize(props.categoryName)}

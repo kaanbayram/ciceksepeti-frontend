@@ -11,7 +11,7 @@ const entryConfig = [
 
 const copyPluginPatterns = {
     patterns: [
-        // { from: "./src/assets/svg/16", to: "svg/16" },
+        { from: "./src/assets/svg/default", to: "svg" },
         { from: "./src/assets/fonts", to: "fonts" },
         { from: "./src/assets/images", to: "images" }
 

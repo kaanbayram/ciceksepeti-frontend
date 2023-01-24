@@ -5,7 +5,6 @@ import { CategoryItem } from '.';
 import * as Styles from '../assets/styles.scss';
 import { ICategoryListProps } from '../entities';
 
-
 export default function CategoryList(props: ICategoryListProps) {
 
     const products = useSelector((state: IState) => state.products) || []

@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { produce } from 'immer';
 import { IProduct } from './entities';
 import { IAction } from '../..';
 
