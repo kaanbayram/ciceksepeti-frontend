@@ -5,5 +5,21 @@
   "basket": "Basket",
   "basketPromotionMessage": "add and shipping will be free",
   "categories": "Categories",
-  "addToBasket":"Sepete Ekle"
+  "addToBasket": "Sepete Ekle",
+  "freeDelivery": "Free Delivery",
+  "electronic": "Electronic",
+  "home": "Home and Life",
+  "pet": "Pet",
+  "book": "Book",
+  "toy": "Toy",
+  "sport": "Sport",
+  "flower": "Flower",
+  "gift": "Gift",
+  "fashion": "Fashion",
+  "office": "Office",
+  "parfume": "Parfume",
+  "care": "Care",
+  "petshop": "Petshop",
+  "all": "All",
+  "basketPromotionCompleteMessage": "Free Delivery!"
 }

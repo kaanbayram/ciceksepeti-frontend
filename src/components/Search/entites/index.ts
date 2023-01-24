@@ -1,0 +1,1 @@
+export type { ISearchProps } from './ISearchProps'

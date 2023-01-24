@@ -5,5 +5,21 @@
   "basket": "Sepetim",
   "basketPromotionMessage": "ürün daha ekleyin kargo bedava",
   "categories": "Kategoriler",
-  "addToBasket":"Sepete Ekle"
+  "addToBasket": "Sepete Ekle",
+  "freeDelivery": "Ücretsiz Teslimat",
+  "electronic": "Electronik",
+  "home": "Ev ve Yaşam",
+  "pet": "Evcil Hayvan",
+  "book": "Kitap",
+  "toy": "Oyuncak",
+  "sport": "Spor",
+  "flower": "Çiçek",
+  "gift": "Hediye",
+  "fashion": "Moda, Aksesuar",
+  "office": "Ofis, Kırtasiye",
+  "parfume": "Parfüm",
+  "care": "Kişisel Bakım",
+  "petshop": "Petshop",
+  "all": "Tümü",
+  "basketPromotionCompleteMessage": "Kargonuz Bedava!"
 }

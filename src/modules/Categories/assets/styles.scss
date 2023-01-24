@@ -39,6 +39,15 @@
             border: 1px solid #E2E7E9;
             border-radius: 10px;
             opacity: 1;
+
+        }
+
+        .selectedCategory {
+            background-color: #0958d9;
+
+            &>span {
+                color: white;
+            }
         }
     }
 }

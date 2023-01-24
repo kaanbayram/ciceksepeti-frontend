@@ -1,0 +1,1 @@
+export type { IFilters } from './IFilters';
