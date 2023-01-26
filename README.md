@@ -25,7 +25,7 @@ product service with node.js and published it. https://ciceksepeti-backend.verce
 
 Links:
 
-    https://ciceksepeti-frontend-csh8t13lr-kaanbayram.vercel.app/  - Front-end
+    https://ciceksepeti-frontend-41loxjs2j-kaanbayram.vercel.app/  - Front-end
 
     https://ciceksepeti-backend.vercel.app/api/products - Example product api
 
